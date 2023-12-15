@@ -3,7 +3,16 @@
 var btn = document.getElementsByTagName("button")[0];
 var input = document.getElementById("userinput");
 var rand_btn = document.getElementById("random");
-const pokemon_html = document.querySelector('.pokemon')
+const pokemon_html = document.querySelector('.pokemon');
+var nxtbtn = document.getElementById("nextButton");
+var prvbtn = document.getElementById("prevButton");
+const twitterimages = 
+[
+"https://pbs.twimg.com/media/GBF-hV1acAAcP8G?format=jpg&name=large",
+"https://pbs.twimg.com/media/GBByL97asAAfCvA?format=jpg&name=large",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAxoO3MRPXlU041u3Htxc8yXEHUwDlcFFEwA&usqp=CAU"
+];
+const counter = 0;
 
 
 const SearchPokemon = (api_obj) => {
@@ -16,7 +25,7 @@ const SearchPokemon = (api_obj) => {
 		.then( (data) => changeHtml(data))
 		.catch((err) => { //if some error happens, it shows the following message
 			pokemon_html.innerHTML = 
-			  `<h1> Some Error Occured.. Please revise your code! </h1>`;
+			  `<h1> Please type the name in correctly... </h1>`;
 		})
 
 	const changeHtml = (data) => {
@@ -37,18 +46,11 @@ const SearchPokemon = (api_obj) => {
 			<h1 class= "name" > ${data.name} </h1>
 			<img src= "${data.sprites.other.dream_world.front_default? data.sprites.other.dream_world.front_default : data.sprites.front_default? data.sprites.front_default : 
 			"https://thumbs.dreamstime.com/b/no-pokemon-here-sign-riga-latvia-july-restricted-area-over-white-background-go-very-popular-virtual-74549871.jpg"} " /> 
-			<h3> weight: <span class="out">${data.weight} hg </span> </h3>
-			<h3> height: <span class="out">${data.height} dm</span> </h3>
-			<h3> type: <span class="out">${data.types[0].type.name} </span> </h3>
-		</div>
-		<div class= "stats">
-				<h3>${data.name}'s stats: </h3>
-				${got_stats}
 		</div>`
+
 		pokemon_html.innerHTML = newHtml //add it into html
 		input.value = ""; //to reset the input line
 	}
-
 }
 
 /////////////////
@@ -83,12 +85,23 @@ function SearchAfterClick(event) {
 	}	
 }
 
+function ResetAfterClick(event) {
+	const newHtml = `
+		<div class = "details" align="center">
+			<h1 class= "name" > ${data.name} </h1>
+			<img src= "${data.sprites.other.dream_world.front_default? data.sprites.other.dream_world.front_default : data.sprites.front_default? data.sprites.front_default : 
+			"https://thumbs.dreamstime.com/b/no-pokemon-here-sign-riga-latvia-july-restricted-area-over-white-background-go-very-popular-virtual-74549871.jpg"} " /> 
+		</div>`
+}
+
 function SearchAfterKeypress(event) {
 	if (inputLength()> 0 && event.keyCode === 13) { //checks the Enter keyboard command
 		SearchPokemon(MakeUrl(input.value)); //search Pokemon by using inputted value
 	}
 }
+
 btn.addEventListener("click",SearchAfterClick); 
 input.addEventListener("keypress", SearchAfterKeypress);
 rand_btn.addEventListener("click",Randomize);
+nxtbtn.addEventListener("click",ResetAfterClick);
 //////////////////////
