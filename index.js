@@ -73,7 +73,15 @@ twitterimages =
 "https://media.discordapp.net/attachments/1185395352359149718/1185395835203227758/BIGHAM_vt.png?ex=658f74e6&is=657cffe6&hm=3aecff381ac3a05cb02e7d73664b575cef4350cab9dbd2c7c4e09d9264f58933&=&format=webp&quality=lossless&width=769&height=671",
 "https://media.discordapp.net/attachments/1185395352359149718/1185395834905428079/chewydukk.jpg?ex=658f74e6&is=657cffe6&hm=5d3c958548a5d55463d78f73e443ff156691151aa6aee5a33476ea51f537b008&=&format=webp&width=1008&height=671",
 "https://media.discordapp.net/attachments/1185395352359149718/1185395834666364958/VtuberTalk.jpg?ex=658f74e6&is=657cffe6&hm=83b0042142a0dfd3b6074b54b963eda2fa8eaa80d9ef6cd31ff0a6ceb2e20c19&=&format=webp",
+"https://pbs.twimg.com/media/GBVdHdPXIAI0pKS?format=jpg&name=large",
+"https://pbs.twimg.com/media/FqfZeYSaYAAvhj9?format=jpg&name=4096x4096",
+"https://pbs.twimg.com/media/FlKwjAfXwAsIcUy?format=jpg&name=900x900",
+"https://pbs.twimg.com/media/FmC-e4_aUAQ29Y4?format=jpg&name=large",
+"https://pbs.twimg.com/media/Fe7nIQdXwAIfOaK?format=jpg&name=4096x4096",
+"https://pbs.twimg.com/media/GBN-smHbMAAjJAP?format=jpg&name=large",
+"https://pbs.twimg.com/media/F-AOXq_WYAAfa64?format=jpg&name=4096x4096",
 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAxoO3MRPXlU041u3Htxc8yXEHUwDlcFFEwA&usqp=CAU"
+
 ];
 names = [
 ""
@@ -138,6 +146,13 @@ names = [
 ,"BIGHAM_vt"
 ,"chewydukk"
 ,"VtuberTalk"
+,"PsiPhiBabySeal"
+,"dofume"
+,"Kyuri/Tiff"
+,"cassiopeia"
+,"Pocket_Lei"
+,"Arudorin"
+,"Ramathal"
 ];
 let counter = 0;
 
