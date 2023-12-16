@@ -171,7 +171,7 @@ const SearchPokemon = (api_obj) => {
 		const newHtml = `
 		<div class = "details" align="center">
 			<h1 class= "name" > ${data.name} </h1>
-			<img src= "${data.sprites.other.dream_world.front_default? data.sprites.other.dream_world.front_default : data.sprites.front_default? data.sprites.front_default : 
+			<img class= "pokemonpic" src= "${data.sprites.front_default? data.sprites.front_default : 
 			"https://thumbs.dreamstime.com/b/no-pokemon-here-sign-riga-latvia-july-restricted-area-over-white-background-go-very-popular-virtual-74549871.jpg"} " /> 
 		</div>`
 
