@@ -100,7 +100,12 @@ button {
 }
 
 .pokemonpic {
-  width: 700px;
+  width: 350px;
+  height: auto;
+}
+
+.pokemonpic2 {
+  width: 350px;
   height: auto;
 }
 

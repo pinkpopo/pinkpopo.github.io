@@ -189,6 +189,8 @@ const SearchPokemon = (api_obj) => {
 			<h1 class= "name" > ${data.name} </h1>
 			<img class= "pokemonpic" src= "${data.sprites.front_default? data.sprites.front_default : 
 			"https://thumbs.dreamstime.com/b/no-pokemon-here-sign-riga-latvia-july-restricted-area-over-white-background-go-very-popular-virtual-74549871.jpg"} " /> 
+			<img class= "pokemonpic2" src= "${data.sprites.front_shiny? data.sprites.front_shiny : 
+				"https://thumbs.dreamstime.com/b/no-pokemon-here-sign-riga-latvia-july-restricted-area-over-white-background-go-very-popular-virtual-74549871.jpg"} " />
 		</div>`
 
 		pokemon_html.innerHTML = newHtml //add it into html
