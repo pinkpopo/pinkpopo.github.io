@@ -11,7 +11,7 @@ var vtubername = document.getElementById("vtuberName");
 var count = document.getElementById("count");
 twitterimages = 
 [
-"https://pbs.twimg.com/media/GBA73uab0AAZXJA?format=jpg&name=large",
+"https://media.discordapp.net/attachments/1165718557825445959/1185656302312103976/PkmnWithMori.png?ex=6590677a&is=657df27a&hm=4aee3f939ef1eb383e36fb12686d1e14384294b891c22832b7e2cacbd76d9b93&=&format=webp&quality=lossless&width=1034&height=582",
 "https://media.discordapp.net/attachments/1185395352359149718/1185396179236835519/KingpinKori.jpg?ex=658f7538&is=657d0038&hm=a3600892e8598d626ea7c2fbd43a4990ea48b6b0dd6c4cd7c264b98c37332ffc&=&format=webp&width=669&height=671",
 "https://media.discordapp.net/attachments/1185395352359149718/1185396167232720956/Loon_Moon_.jpg?ex=658f7535&is=657d0035&hm=a8c14bf2633ff0be5e6e2b16c464c364c749b3889680104a481421eaf0f69715&=&format=webp&width=304&height=670",
 "https://media.discordapp.net/attachments/1185395352359149718/1185396166737789008/nyaoista.jpg?ex=658f7535&is=657d0035&hm=8bdd16f7f61d4f2012df5c06b3a0d882563b5738f4e2b58fafceb9dadb87ea19&=&format=webp&width=671&height=671",
@@ -80,8 +80,8 @@ twitterimages =
 "https://pbs.twimg.com/media/Fe7nIQdXwAIfOaK?format=jpg&name=4096x4096",
 "https://pbs.twimg.com/media/GBN-smHbMAAjJAP?format=jpg&name=large",
 "https://pbs.twimg.com/media/F-AOXq_WYAAfa64?format=jpg&name=4096x4096",
+"https://pbs.twimg.com/media/FbXUZjBXoAEIV8v?format=jpg&name=large",
 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAxoO3MRPXlU041u3Htxc8yXEHUwDlcFFEwA&usqp=CAU"
-
 ];
 names = [
 ""
@@ -153,6 +153,7 @@ names = [
 ,"Pocket_Lei"
 ,"Arudorin"
 ,"Ramathal"
+,"Amai_Umimaru"
 ];
 let counter = 0;
 
@@ -237,7 +238,7 @@ function ResetAfterClick(event) {
 	counter = (counter +1) % twitterimages.length;
 	vtuber.src=twitterimages[counter];
 	vtubername.innerHTML=names[counter];
-	count.textContent= counter+"/61";
+	count.textContent= counter+"/"+(names.length-1);
 }
 
 function ReverseAfterClick(event) {
@@ -245,7 +246,7 @@ function ReverseAfterClick(event) {
 	counter = (counter -1);
 	vtuber.src=twitterimages[counter];
 	vtubername.innerHTML=names[counter];
-	count.textContent= counter+"/61";
+	count.textContent= counter+"/"+(names.length-1);
 }
 
 function SearchAfterKeypress(event) {
