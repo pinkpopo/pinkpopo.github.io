@@ -10,16 +10,19 @@
 	</title>
 
 </head>
-<body style="height:50%;">
-		<div class= "searchBar">
-			<input id="userinput" class = "searchTerm" type="text" placeholder="enter pokemon name or id..">
-			<button id = "searchButton" type="submit" class = "searchButton" > Search</button>
-		</div>
+<body>
+	<div class= "searchBar">
+		<input id="userinput" class = "searchTerm" type="text" placeholder="enter pokemon name or id..">
+		<button id = "searchButton" type="submit" class = "searchButton" > Search</button>
+	</div>
     <div style="width: 100%;">
         <div style="width: 50%; float: left;" >
-            <img id="person" src="https://pbs.twimg.com/media/GBF-hV1acAAcP8G?format=jpg&name=large" style="width: 100%;"/>
-            <button class="prevButton">Prev</button>
-            <button class="nextButton">Next</button>
+            <button type="submit" class="prevButton" id="prevButton">Prev</button>
+            <button type="submit" class="nextButton" id="nextButton">Next</button>
+			<h1 class="vtuberName" id="vtuberName"></h1>
+			<div>
+				<img id="person" src="https://pbs.twimg.com/media/GBA73uab0AAZXJA?format=jpg&name=large" style="width: auto; height: 90vh"/>
+			</div>
         </div>        
         <div class = "pokemon zone" style="margin-left: 50%;" >
             <h1 id="initial"> What Pokemon will be decided.. </h1>

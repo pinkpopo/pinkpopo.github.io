@@ -1,5 +1,5 @@
 *{
-    padding: 10px;
+    padding: 0px;
     margin: auto 0;
 }
 body {
@@ -8,7 +8,7 @@ body {
     font-family: proxima-nova, sans-serif;
     display: grid;
     grid-template-rows: 5%;
-    height: 25%;
+    height: auto;
     text-align: center;
     font-size: calc(1rem + 0.5vw);
 }
@@ -67,7 +67,7 @@ button {
   width: 10vw;
 }
 
-.randButton { /*randomizer button*/
+.nxtbtn { 
   width: auto;
   border: 1px solid #2468B1;
   background: #2468B1; 
@@ -78,11 +78,26 @@ button {
 
 }
 
+.vtuberName { 
+  width: auto;
+  color: #FCCF00;
+}
 
+.prevbtn { 
+  width: auto;
+  border: 1px solid #2468B1;
+  background: #2468B1; 
+  color: #FCCF00; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 
 /*POKEMON DISPLAY*/
 .pokemon {
     color: #FCCF00;
+    text-align: center;
     background-color: black;
     font-weight: bold;
     font-size: calc(2rem + 1vw);
@@ -97,37 +112,6 @@ button {
   text-align: center;
   grid-column: 1/4;
 }
-.details { /*block where picture, overall details are */
-  background-color: black;
-  color: #FCCF00;
-  border: 3px solid #FCCF00;
-  border-radius: 5px;
-  padding: 5px;
-  /*grid-column: 1/2;*/
-  grid-area: details;
-}
-.stats { /*block where only stats are */
-  margin: 0;
-  padding: 5px;
-  padding-left: 10px;
-  background-color: black;
-  border: 3px solid #FCCF00;
-  color: #FCCF00;
-  border-radius: 5px;
-  text-align: left;
-  /*grid-column: 2/3;*/
-  grid-area: stats;
-}
-.stats > h3 {
-  color: #2468B1;
-}
-.out { /*outputs from API*/
-  color: #2468B1;
-}
-.details > img {
-  width: auto;
-  height: 15vw;
-}
 @media only screen and (max-width: 768px) { /*responsive design*/
   .pokemon {
     grid-template-areas: 
@@ -140,7 +124,6 @@ button {
     width: 100%;
   }
 }
-
 
 /*FOOTER*/
 .footer {
