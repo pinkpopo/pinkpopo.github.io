@@ -8,6 +8,7 @@ var nxtbtn = document.getElementById("nextButton");
 var prvbtn = document.getElementById("prevButton");
 var vtuber = document.getElementById("person");
 var vtubername = document.getElementById("vtuberName");
+var count = document.getElementById("count");
 twitterimages = 
 [
 "https://pbs.twimg.com/media/GBA73uab0AAZXJA?format=jpg&name=large",
@@ -221,6 +222,7 @@ function ResetAfterClick(event) {
 	counter = (counter +1) % twitterimages.length;
 	vtuber.src=twitterimages[counter];
 	vtubername.innerHTML=names[counter];
+	count.textContent= counter+"/61";
 }
 
 function ReverseAfterClick(event) {
@@ -228,6 +230,7 @@ function ReverseAfterClick(event) {
 	counter = (counter -1);
 	vtuber.src=twitterimages[counter];
 	vtubername.innerHTML=names[counter];
+	count.textContent= counter+"/61";
 }
 
 function SearchAfterKeypress(event) {

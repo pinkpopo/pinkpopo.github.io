@@ -83,6 +83,11 @@ button {
   color: #FCCF00;
 }
 
+.count {
+  width: auto;
+  color: #FCCF00;
+}
+
 .prevbtn { 
   width: auto;
   border: 1px solid #2468B1;
